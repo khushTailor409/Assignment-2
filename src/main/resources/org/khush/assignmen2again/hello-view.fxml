@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="807.0" prefWidth="1261.0">
+            <children>
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#727272" height="331.0" layoutX="46.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" width="1169.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
