@@ -29,7 +29,7 @@
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" height="12.0" layoutX="520.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                <VBox layoutX="14.0" layoutY="404.0" prefHeight="200.0" prefWidth="610.0" style="-fx-background-color: lightgrey;">
