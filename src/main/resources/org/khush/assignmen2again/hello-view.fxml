@@ -95,13 +95,22 @@
                      </HBox>
                   </children>
                </VBox>
-               <Pane layoutX="75.0" layoutY="30.0" prefHeight="70.0" prefWidth="129.0">
+               <Pane layoutX="75.0" layoutY="21.0" prefHeight="70.0" prefWidth="129.0">
                   <children>
                      <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -16.0, 0.0, -16.0, -25.0, 19.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
                      <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
                      <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
                      <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="25.46875" />
+                  </children>
+               </Pane>
+               <Pane layoutX="75.0" layoutY="111.0" prefHeight="70.0" prefWidth="129.0">
+                  <children>
+                     <Polygon fill="#d01c0f" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -26.0, 0.0, -12.0, -25.0, 26.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
+                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                     <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                     <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                     <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="25.46875" />
                   </children>
                </Pane>
             </children></AnchorPane>
