@@ -1,10 +1,14 @@
 package org.khush.assignmen2again;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
@@ -32,10 +36,12 @@ public class HelloController {
     private final CarRaceModel model = new CarRaceModel();
     private final TranslateTransition[] movements = new TranslateTransition[4];
     private int finishedCount = 0;
+    private boolean slideshowPlaying = true;
 
     @FXML
     private void initialize() {
         raceStatusLabel.setText("Ready to race!");
+        startButton.setDisable(true);
         speedSlider.setMin(0.5);
         speedSlider.setMax(3.0);
         speedSlider.setValue(1.0);
@@ -49,11 +55,30 @@ public class HelloController {
         startButton.setOnAction(event -> startRace());
         pauseButton.setOnAction(event -> pauseRace());
         resetButton.setOnAction(event -> resetRace());
+
+        Platform.runLater(this::showSlideshow);
+    }
+
+    private void showSlideshow() {
+        AnchorPane root = (AnchorPane) car1.getParent();
+
+        Pane slideshow = new Pane();
+        slideshow.setPrefSize(1261, 630);
+        slideshow.setStyle("-fx-background-color: white;");
+        root.getChildren().add(slideshow);
+
+        Timeline slides = new Timeline(new KeyFrame(Duration.seconds(2), event -> {
+            root.getChildren().remove(slideshow);
+            slideshowPlaying = false;
+            startButton.setDisable(false);
+            startRace();
+        }));
+        slides.play();
     }
 
     @FXML
     private void startRace() {
-        if (finishedCount == model.getCarCount()) {
+        if (slideshowPlaying || finishedCount == model.getCarCount()) {
             return;
         }
 
@@ -102,6 +127,9 @@ public class HelloController {
 
     @FXML
     private void pauseRace() {
+        if (slideshowPlaying || movements[0] == null) {
+            return;
+        }
         for (TranslateTransition move : movements) {
             if (move != null) {
                 move.pause();
@@ -112,6 +140,9 @@ public class HelloController {
 
     @FXML
     private void resetRace() {
+        if (slideshowPlaying) {
+            return;
+        }
         for (int i = 0; i < movements.length; i++) {
             if (movements[i] != null) {
                 movements[i].stop();
