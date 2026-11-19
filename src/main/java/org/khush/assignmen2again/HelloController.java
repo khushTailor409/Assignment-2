@@ -12,6 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class HelloController {
 
@@ -96,7 +97,13 @@ public class HelloController {
         }
 
         Pane[] cars = {car1, car2, car3, car4};
-        double[] times = {5, 6, 4, 7};
+        double[] times = {4, 5, 6, 7};
+        for (int i = times.length - 1; i > 0; i--) {
+            int j = ThreadLocalRandom.current().nextInt(i + 1);
+            double temp = times[i];
+            times[i] = times[j];
+            times[j] = temp;
+        }
 
         for (int i = 0; i < cars.length; i++) {
             TranslateTransition move = new TranslateTransition();
