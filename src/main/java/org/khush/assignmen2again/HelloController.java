@@ -35,6 +35,16 @@ public class HelloController {
     @FXML
     private void initialize() {
         raceStatusLabel.setText("Ready to race!");
+        speedSlider.setMin(0.5);
+        speedSlider.setMax(3.0);
+        speedSlider.setValue(1.0);
+        speedSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            for (TranslateTransition move : movements) {
+                if (move != null) {
+                    move.setRate(newValue.doubleValue());
+                }
+            }
+        });
         startButton.setOnAction(event -> startRace());
         pauseButton.setOnAction(event -> pauseRace());
         resetButton.setOnAction(event -> resetRace());
@@ -60,6 +70,7 @@ public class HelloController {
             move.setNode(cars[i]);
             move.setDuration(Duration.seconds(times[i]));
             move.setToX(950);
+            move.setRate(speedSlider.getValue());
             movements[i] = move;
             move.play();
         }
