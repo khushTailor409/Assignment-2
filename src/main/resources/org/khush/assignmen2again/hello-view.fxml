@@ -36,6 +36,8 @@
                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle fx:id="startLine" fill="WHITE" height="331.0" layoutX="230.0" layoutY="21.0" width="5.0" />
+                    <Rectangle fx:id="finishLine" fill="BLACK" height="331.0" layoutX="1090.0" layoutY="21.0" width="5.0" />
                     <VBox layoutX="14.0" layoutY="404.0" prefHeight="200.0" prefWidth="610.0" style="-fx-background-color: lightgrey;">
                         <children>
                             <HBox prefHeight="102.0" prefWidth="553.0" spacing="10.0">
