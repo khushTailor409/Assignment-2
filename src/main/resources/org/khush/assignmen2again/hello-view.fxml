@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.stage.Stage?>
 
-<Stage xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Stage xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.khush.assignmen2again.HelloController">
     <scene>
         <Scene>
             <AnchorPane prefHeight="630.0" prefWidth="1261.0">

@@ -55,5 +55,4 @@ public class CarRaceModel {
             speeds[i] = 1;
         }
     }
-
 }

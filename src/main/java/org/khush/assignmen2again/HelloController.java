@@ -71,7 +71,7 @@ public class HelloController {
             root.getChildren().remove(slideshow);
             slideshowPlaying = false;
             startButton.setDisable(false);
-            startRace();
+            raceStatusLabel.setText("Ready to race!");
         }));
         slides.play();
     }
@@ -83,6 +83,9 @@ public class HelloController {
         }
 
         if (movements[0] != null) {
+            if (movements[0].getStatus() == javafx.animation.Animation.Status.RUNNING) {
+                return;
+            }
             for (TranslateTransition move : movements) {
                 if (move != null) {
                     move.play();
@@ -120,8 +123,11 @@ public class HelloController {
         finishedCount++;
 
         if (finishedCount == 1) {
+            resultLabel.setText("Winner: Car " + model.getNumber(index) + " (" + model.getColor(index) + ")");
             raceStatusLabel.setText("Congratulations! Car " + model.getNumber(index) +
                     " (" + model.getColor(index) + ") wins!");
+        } else if (finishedCount == model.getCarCount()) {
+            raceStatusLabel.setText("Race finished! All cars crossed the line.");
         }
     }
 
@@ -161,6 +167,7 @@ public class HelloController {
         place2Label.setText("Waiting...");
         place3Label.setText("Waiting...");
         place4Label.setText("Waiting...");
+        resultLabel.setText("Race Results");
         raceStatusLabel.setText("Ready to race!");
     }
 }
