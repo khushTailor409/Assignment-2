@@ -10,6 +10,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.image.ImageView;
+import javafx.scene.media.AudioClip;
+import java.net.URL;
+import javafx.scene.SnapshotParameters;
+import javafx.scene.paint.Color;
+import javafx.geometry.Pos;
+import javafx.scene.text.Font;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 import java.util.concurrent.ThreadLocalRandom;
@@ -26,6 +33,9 @@ public class HelloController {
     private Slider speedSlider;
 
     @FXML
+    private Label speedValueLabel;
+
+    @FXML
     private Rectangle startLine, finishLine;
 
     @FXML
@@ -38,6 +48,7 @@ public class HelloController {
     private final TranslateTransition[] movements = new TranslateTransition[4];
     private int finishedCount = 0;
     private boolean slideshowPlaying = true;
+    private AudioClip slideshowSound;
 
     @FXML
     private void initialize() {
@@ -46,7 +57,9 @@ public class HelloController {
         speedSlider.setMin(0.5);
         speedSlider.setMax(3.0);
         speedSlider.setValue(1.0);
+        speedValueLabel.setText(String.format("%.1fx", speedSlider.getValue()));
         speedSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            speedValueLabel.setText(String.format("%.1fx", newValue.doubleValue()));
             for (TranslateTransition move : movements) {
                 if (move != null) {
                     move.setRate(newValue.doubleValue());
@@ -62,13 +75,56 @@ public class HelloController {
 
     private void showSlideshow() {
         AnchorPane root = (AnchorPane) car1.getParent();
+        Pane[] cars = {car1, car2, car3, car4};
 
         Pane slideshow = new Pane();
         slideshow.setPrefSize(1261, 630);
         slideshow.setStyle("-fx-background-color: white;");
+
+        Label greeting = new Label("Welcome to the Car Race!");
+        greeting.setFont(Font.font(30));
+        greeting.setAlignment(Pos.CENTER);
+        greeting.setPrefWidth(1261);
+        greeting.setLayoutY(110);
+
+        Label carName = new Label();
+        carName.setFont(Font.font(22));
+        carName.setAlignment(Pos.CENTER);
+        carName.setPrefWidth(1261);
+        carName.setLayoutY(435);
+
+        ImageView preview = new ImageView();
+        preview.setFitWidth(387);
+        preview.setFitHeight(210);
+        preview.setPreserveRatio(true);
+        preview.setLayoutX(437);
+        preview.setLayoutY(200);
+
+        slideshow.getChildren().addAll(greeting, preview, carName);
         root.getChildren().add(slideshow);
 
-        Timeline slides = new Timeline(new KeyFrame(Duration.seconds(2), event -> {
+        URL soundFile = getClass().getResource("mfcc-intro-intro-music-632943.mp3");
+        if (soundFile != null) {
+            slideshowSound = new AudioClip(soundFile.toExternalForm());
+            slideshowSound.play();
+        }
+
+        SnapshotParameters snapshotSettings = new SnapshotParameters();
+        snapshotSettings.setFill(Color.TRANSPARENT);
+
+        Timeline slides = new Timeline();
+        for (int i = 0; i < cars.length; i++) {
+            final int index = i;
+            slides.getKeyFrames().add(new KeyFrame(Duration.seconds(i * 1.2), event -> {
+                // The previews are generated directly from the four existing JavaFX cars.
+                preview.setImage(cars[index].snapshot(snapshotSettings, null));
+                carName.setText("Car " + model.getNumber(index) + " - " + model.getColor(index));
+            }));
+        }
+        slides.getKeyFrames().add(new KeyFrame(Duration.seconds(4.8), event -> {
+            if (slideshowSound != null) {
+                slideshowSound.stop();
+            }
             root.getChildren().remove(slideshow);
             slideshowPlaying = false;
             startButton.setDisable(false);

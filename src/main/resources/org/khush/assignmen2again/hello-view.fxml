@@ -57,7 +57,7 @@
                                 <children>
                                     <Label prefHeight="33.0" prefWidth="121.0" text="Speed:" />
                                     <Slider fx:id="speedSlider" prefHeight="40.0" prefWidth="402.0" />
-                                    <Label prefHeight="31.0" prefWidth="74.0" text="1.0x" />
+                                    <Label fx:id="speedValueLabel" prefHeight="31.0" prefWidth="74.0" text="1.0x" />
                                 </children>
                             </HBox>
                         </children>
