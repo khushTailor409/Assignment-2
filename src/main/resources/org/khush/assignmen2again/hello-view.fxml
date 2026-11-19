@@ -19,132 +19,133 @@
     <scene>
         <Scene>
             <AnchorPane prefHeight="630.0" prefWidth="1261.0">
-            <children>
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#727272" height="331.0" layoutX="46.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="1169.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-               <VBox layoutX="14.0" layoutY="404.0" prefHeight="200.0" prefWidth="610.0" style="-fx-background-color: lightgrey;">
-                  <children>
-                     <HBox prefHeight="102.0" prefWidth="553.0" spacing="10.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#727272" height="331.0" layoutX="46.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="1169.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="58.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="290.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="520.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="755.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="987.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                    <VBox layoutX="14.0" layoutY="404.0" prefHeight="200.0" prefWidth="610.0" style="-fx-background-color: lightgrey;">
                         <children>
-                           <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: green;" text="START" textFill="WHITE">
-                              <font>
-                                 <Font name="System Bold" size="12.0" />
-                              </font></Button>
-                           <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="167.0" style="-fx-background-color: blue;" text="PAUSE" textFill="WHITE">
-                              <font>
-                                 <Font name="System Bold" size="12.0" />
-                              </font></Button>
-                           <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: red;" text="RESTART" textFill="WHITE" />
+                            <HBox prefHeight="102.0" prefWidth="553.0" spacing="10.0">
+                                <children>
+                                    <Button fx:id="startButton" mnemonicParsing="false" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: green;" text="START" textFill="WHITE">
+                                        <font>
+                                            <Font name="System Bold" size="12.0" />
+                                        </font></Button>
+                                    <Button fx:id="pauseButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="167.0" style="-fx-background-color: blue;" text="PAUSE" textFill="WHITE">
+                                        <font>
+                                            <Font name="System Bold" size="12.0" />
+                                        </font></Button>
+                                    <Button fx:id="resetButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: red;" text="RESTART" textFill="WHITE" />
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="559.0">
+                                <children>
+                                    <Label prefHeight="33.0" prefWidth="121.0" text="Label" />
+                                    <Slider fx:id="speedSlider" prefHeight="40.0" prefWidth="402.0" />
+                                    <Label prefHeight="31.0" prefWidth="74.0" text="Label" />
+                                </children>
+                            </HBox>
                         </children>
-                     </HBox>
-                     <HBox prefHeight="100.0" prefWidth="559.0">
+                    </VBox>
+                    <VBox layoutX="682.0" layoutY="404.0" prefHeight="200.0" prefWidth="570.0" spacing="10.0" style="-fx-background-color: lightgrey;">
                         <children>
-                           <Label prefHeight="33.0" prefWidth="121.0" text="Label" />
-                           <Slider prefHeight="40.0" prefWidth="402.0" />
-                           <Label prefHeight="31.0" prefWidth="74.0" text="Label" />
+                            <Label fx:id="resultLabel" prefHeight="51.0" prefWidth="562.0" text="Label" />
+                            <Label text="Label" />
+                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                <children>
+                                    <VBox prefHeight="100.0" prefWidth="439.0">
+                                        <children>
+                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                <children>
+                                                    <Circle fill="#dfff1f" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                                                    <Label text="Label" />
+                                                    <Label text="Label" />
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                <children>
+                                                    <Circle fill="#949494" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                                                    <Label text="Label" />
+                                                    <Label text="Label" />
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                <children>
+                                                    <Circle fill="#8d633c" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                                                    <Label text="Label" />
+                                                    <Label text="Label" />
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                <children>
+                                                    <Circle fill="#004280" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                                                    <Label text="Label" />
+                                                    <Label text="Label" />
+                                                </children>
+                                            </HBox>
+                                        </children>
+                                    </VBox>
+                                    <Pane prefHeight="70.0" prefWidth="129.0">
+                                        <children>
+                                            <Polygon layoutX="53.0" layoutY="34.0" points="14.5, 13.0, -31.0, 25.0, -39.0, -13.0, -20.0, -13.0, -8.0, -21.0, 21.0, 10.0, 50.0, 41.0, 50.0, 53.0" stroke="BLACK" strokeType="INSIDE" />
+                                            <Polygon fill="WHITE" layoutX="58.0" layoutY="47.0" points="6.5, 3.0, 50.0, 0.0, 50.0, -42.0, 29.0, -31.0, 7.0, -31.0, 7.0, -7.0, -36.0, 36.0, -36.0, 48.0" stroke="BLACK" strokeType="INSIDE" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
                         </children>
-                     </HBox>
-                  </children>
-               </VBox>
-               <VBox layoutX="682.0" layoutY="404.0" prefHeight="200.0" prefWidth="570.0" style="-fx-background-color: lightgrey;">
-                  <children>
-                     <Label prefHeight="51.0" prefWidth="562.0" text="Label" />
-                     <Label text="Label" />
-                     <HBox prefHeight="100.0" prefWidth="200.0">
+                    </VBox>
+                    <Pane fx:id="car2" layoutX="75.0" layoutY="111.0" prefHeight="70.0" prefWidth="129.0">
                         <children>
-                           <VBox prefHeight="100.0" prefWidth="439.0">
-                              <children>
-                                 <HBox prefHeight="100.0" prefWidth="200.0">
-                                    <children>
-                                       <Circle fill="#dfff1f" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                       <Label text="Label" />
-                                       <Label text="Label" />
-                                    </children>
-                                 </HBox>
-                                 <HBox prefHeight="100.0" prefWidth="200.0">
-                                    <children>
-                                       <Circle fill="#949494" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                       <Label text="Label" />
-                                       <Label text="Label" />
-                                    </children>
-                                 </HBox>
-                                 <HBox prefHeight="100.0" prefWidth="200.0">
-                                    <children>
-                                       <Circle fill="#8d633c" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                       <Label text="Label" />
-                                       <Label text="Label" />
-                                    </children>
-                                 </HBox>
-                                 <HBox prefHeight="100.0" prefWidth="200.0">
-                                    <children>
-                                       <Circle fill="#004280" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                       <Label text="Label" />
-                                       <Label text="Label" />
-                                    </children>
-                                 </HBox>
-                              </children>
-                           </VBox>
-                           <Pane prefHeight="70.0" prefWidth="129.0">
-                              <children>
-                                 <Polygon layoutX="53.0" layoutY="34.0" points="14.5, 13.0, -31.0, 25.0, -39.0, -13.0, -20.0, -13.0, -8.0, -21.0, 21.0, 10.0, 50.0, 41.0, 50.0, 53.0" stroke="BLACK" strokeType="INSIDE" />
-                                 <Polygon fill="WHITE" layoutX="58.0" layoutY="47.0" points="6.5, 3.0, 50.0, 0.0, 50.0, -42.0, 29.0, -31.0, 7.0, -31.0, 7.0, -7.0, -36.0, 36.0, -36.0, 48.0" stroke="BLACK" strokeType="INSIDE" />
-                              </children>
-                           </Pane>
+                            <Polygon fill="#d01c0f" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -26.0, 0.0, -12.0, -25.0, 26.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                            <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="25.46875" />
                         </children>
-                     </HBox>
-                  </children>
-               </VBox>
-               <Pane layoutX="75.0" layoutY="111.0" prefHeight="70.0" prefWidth="129.0">
-                  <children>
-                     <Polygon fill="#d01c0f" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -26.0, 0.0, -12.0, -25.0, 26.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
-                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
-                     <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="25.46875" />
-                  </children>
-               </Pane>
-               <Pane layoutX="75.0" layoutY="204.0" prefHeight="70.0" prefWidth="129.0">
-                  <children>
-                     <Polygon fill="#cf5511" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, -8.0, -33.0, 0.0, -14.0, -19.0, 21.0, -19.0, 40.0, 0.0, 75.0, 6.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
-                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="12.0" layoutX="43.0" layoutY="24.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
-                     <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="25.46875" />
-                  </children>
-               </Pane>
-               <Pane layoutX="75.0" layoutY="280.0" prefHeight="70.0" prefWidth="129.0">
-                  <children>
-                     <Polygon fill="#cdcf13" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -44.0, 6.0, -33.0, 0.0, -14.0, -19.0, 21.0, -19.0, 32.0, 0.0, 60.0, 6.0, 66.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
-                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="12.0" layoutX="43.0" layoutY="24.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
-                     <Circle fill="#686868" layoutX="89.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="25.46875" />
-                  </children>
-               </Pane>
-               <Pane layoutX="85.0" layoutY="31.0" prefHeight="70.0" prefWidth="129.0">
-                  <children>
-                     <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -16.0, 0.0, -16.0, -25.0, 19.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
-                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
-                     <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
-                     <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="25.46875" />
-                  </children>
-               </Pane>
-            </children></AnchorPane>
+                    </Pane>
+                    <Pane fx:id="car3" layoutX="75.0" layoutY="204.0" prefHeight="70.0" prefWidth="129.0">
+                        <children>
+                            <Polygon fill="#cf5511" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, -8.0, -33.0, 0.0, -14.0, -19.0, 21.0, -19.0, 40.0, 0.0, 75.0, 6.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="12.0" layoutX="43.0" layoutY="24.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                            <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="25.46875" />
+                        </children>
+                    </Pane>
+                    <Pane fx:id="car4" layoutX="75.0" layoutY="280.0" prefHeight="70.0" prefWidth="129.0">
+                        <children>
+                            <Polygon fill="#cdcf13" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -44.0, 6.0, -33.0, 0.0, -14.0, -19.0, 21.0, -19.0, 32.0, 0.0, 60.0, 6.0, 66.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="12.0" layoutX="43.0" layoutY="24.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                            <Circle fill="#686868" layoutX="89.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="25.46875" />
+                        </children>
+                    </Pane>
+                    <Pane fx:id="car1" layoutX="85.0" layoutY="31.0" prefHeight="70.0" prefWidth="129.0">
+                        <children>
+                            <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="37.0" points="-50.0, 25.0, -50.0, 0.0, -16.0, 0.0, -16.0, -25.0, 19.0, -25.0, 35.0, 0.0, 75.0, 0.0, 75.0, 25.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff" height="18.0" layoutX="43.0" layoutY="18.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+                            <Circle fill="#686868" layoutX="103.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Circle fill="#686868" layoutX="26.0" layoutY="56.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                            <Text layoutX="52.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="25.46875" />
+                        </children>
+                    </Pane>
+                </children></AnchorPane>
         </Scene>
     </scene>
 </Stage>
+
