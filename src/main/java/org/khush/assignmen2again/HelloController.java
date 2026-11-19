@@ -30,17 +30,25 @@ public class HelloController {
     private Label place1Label, place2Label, place3Label, place4Label;
 
     private final CarRaceModel model = new CarRaceModel();
-
-    private TranslateTransition[] movements = new TranslateTransition[4];
+    private final TranslateTransition[] movements = new TranslateTransition[4];
 
     @FXML
     private void initialize() {
         raceStatusLabel.setText("Ready to race!");
+        startButton.setOnAction(event -> startRace());
+        pauseButton.setOnAction(event -> pauseRace());
+        resetButton.setOnAction(event -> resetRace());
     }
 
     @FXML
     private void startRace() {
         if (movements[0] != null) {
+            for (TranslateTransition move : movements) {
+                if (move != null) {
+                    move.play();
+                }
+            }
+            raceStatusLabel.setText("Race resumed!");
             return;
         }
 
@@ -49,15 +57,41 @@ public class HelloController {
 
         for (int i = 0; i < cars.length; i++) {
             TranslateTransition move = new TranslateTransition();
-
             move.setNode(cars[i]);
             move.setDuration(Duration.seconds(times[i]));
             move.setToX(950);
-
             movements[i] = move;
             move.play();
         }
 
         raceStatusLabel.setText("Race started!");
+    }
+
+    @FXML
+    private void pauseRace() {
+        for (TranslateTransition move : movements) {
+            if (move != null) {
+                move.pause();
+            }
+        }
+        raceStatusLabel.setText("Race paused!");
+    }
+
+    @FXML
+    private void resetRace() {
+        for (int i = 0; i < movements.length; i++) {
+            if (movements[i] != null) {
+                movements[i].stop();
+                movements[i] = null;
+            }
+        }
+
+        car1.setTranslateX(0);
+        car2.setTranslateX(0);
+        car3.setTranslateX(0);
+        car4.setTranslateX(0);
+
+        model.reset();
+        raceStatusLabel.setText("Ready to race!");
     }
 }
