@@ -31,6 +31,7 @@ public class HelloController {
 
     private final CarRaceModel model = new CarRaceModel();
     private final TranslateTransition[] movements = new TranslateTransition[4];
+    private int finishedCount = 0;
 
     @FXML
     private void initialize() {
@@ -52,6 +53,10 @@ public class HelloController {
 
     @FXML
     private void startRace() {
+        if (finishedCount == model.getCarCount()) {
+            return;
+        }
+
         if (movements[0] != null) {
             for (TranslateTransition move : movements) {
                 if (move != null) {
@@ -69,13 +74,30 @@ public class HelloController {
             TranslateTransition move = new TranslateTransition();
             move.setNode(cars[i]);
             move.setDuration(Duration.seconds(times[i]));
-            move.setToX(950);
+            double distance = finishLine.getLayoutX() - (cars[i].getLayoutX() + cars[i].getPrefWidth());
+            move.setToX(distance);
             move.setRate(speedSlider.getValue());
+            final int carIndex = i;
+            move.setOnFinished(event -> carFinished(carIndex));
             movements[i] = move;
             move.play();
         }
 
         raceStatusLabel.setText("Race started!");
+    }
+
+    private void carFinished(int index) {
+        Pane[] cars = {car1, car2, car3, car4};
+        Label[] places = {place1Label, place2Label, place3Label, place4Label};
+
+        model.moveCar(index, cars[index].getTranslateX());
+        places[finishedCount].setText("Car " + model.getNumber(index) + " (" + model.getColor(index) + ")");
+        finishedCount++;
+
+        if (finishedCount == 1) {
+            raceStatusLabel.setText("Congratulations! Car " + model.getNumber(index) +
+                    " (" + model.getColor(index) + ") wins!");
+        }
     }
 
     @FXML
@@ -103,6 +125,11 @@ public class HelloController {
         car4.setTranslateX(0);
 
         model.reset();
+        finishedCount = 0;
+        place1Label.setText("Waiting...");
+        place2Label.setText("Waiting...");
+        place3Label.setText("Waiting...");
+        place4Label.setText("Waiting...");
         raceStatusLabel.setText("Ready to race!");
     }
 }
