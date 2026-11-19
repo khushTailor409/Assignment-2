@@ -62,8 +62,8 @@
                     </VBox>
                     <VBox layoutX="682.0" layoutY="404.0" prefHeight="200.0" prefWidth="570.0" spacing="10.0" style="-fx-background-color: lightgrey;">
                         <children>
-                            <Label fx:id="resultLabel" prefHeight="51.0" prefWidth="562.0" text="Label" />
-                            <Label text="Label" />
+                            <Label fx:id="resultLabel" prefHeight="51.0" prefWidth="562.0" text="Race Results" />
+                            <Label fx:id="raceStatusLabel" text="Ready to race!" />
                             <HBox prefHeight="100.0" prefWidth="200.0">
                                 <children>
                                     <VBox prefHeight="100.0" prefWidth="439.0">
@@ -71,29 +71,29 @@
                                             <HBox prefHeight="100.0" prefWidth="200.0">
                                                 <children>
                                                     <Circle fill="#dfff1f" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                                    <Label text="Label" />
-                                                    <Label text="Label" />
+                                                    <Label text="1st Place:" />
+                                                    <Label fx:id="place1Label" text="Waiting..." />
                                                 </children>
                                             </HBox>
                                             <HBox prefHeight="100.0" prefWidth="200.0">
                                                 <children>
                                                     <Circle fill="#949494" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                                    <Label text="Label" />
-                                                    <Label text="Label" />
+                                                    <Label text="2nd Place:" />
+                                                    <Label fx:id="place2Label" text="Waiting..." />
                                                 </children>
                                             </HBox>
                                             <HBox prefHeight="100.0" prefWidth="200.0">
                                                 <children>
                                                     <Circle fill="#8d633c" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                                    <Label text="Label" />
-                                                    <Label text="Label" />
+                                                    <Label text="3rd Place:" />
+                                                    <Label fx:id="place3Label" text="Waiting..." />
                                                 </children>
                                             </HBox>
                                             <HBox prefHeight="100.0" prefWidth="200.0">
                                                 <children>
                                                     <Circle fill="#004280" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
-                                                    <Label text="Label" />
-                                                    <Label text="Label" />
+                                                    <Label text="4th Place:" />
+                                                    <Label fx:id="place4Label" text="Waiting..." />
                                                 </children>
                                             </HBox>
                                         </children>
